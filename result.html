@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Movie Box Office Gross Prediction</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    </head>
+    <body>
+        <div>
+            <div class="header">
+                <div class="header-center">
+                    <h1>Movie Box Office Gross Prediction</h1>
+                </div>
+            </div>            
+
+            <div class="box">
+                <p>The predicted revenue for the movie is {{y}}</p>
+                <form action="/">
+                    <button type="submit" id="return">Make Another Prediction</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

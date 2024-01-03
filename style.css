@@ -1,0 +1,88 @@
+.header {
+    overflow: hidden;
+    background-color: rgba(255, 230, 230, 0.75);
+    padding: 20px 10px;
+    box-shadow: 20px 20px 60px #F2D1D1,
+        -20px -20px 60px #DAEAF1;
+}
+
+.header-center {
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .header-center {
+        float: none;
+    }
+}
+
+body {
+    background-image: linear-gradient(45deg, #DAEAF1, #C6DCE4);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.box {
+    border-radius: 20px;
+    background-color: rgba(255, 230, 230, 0.75);
+    box-shadow: 5px 5px 20px #F2D1D1;
+    padding-top: 50px;
+    margin: 50px auto;
+    overflow: hidden;
+    text-align: center;
+    width: 600px;
+}
+
+input {
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: white;
+    height: 50px;
+    width: 450px;
+    margin: 10px;
+    border: none;
+}
+
+select {
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: white;
+    height: 50px;
+    width: 450px;
+    margin: 10px;
+    border: none;
+}
+
+select:not(:valid) {
+    color: gray;
+}
+
+#submit {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 20px;
+    height: 50px;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom:40px;
+    border: none;
+}
+
+#return {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 20px;
+    height: 50px;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom:40px;
+    border: none;
+}
+
+p {
+    font-weight: bold;
+}

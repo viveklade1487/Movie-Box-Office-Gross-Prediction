@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Movie Box Office Gross Prediction</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    </head>
+    <body>
+        <div>
+            <div class="header">
+                <div class="header-center">
+                    <h1>Movie Box Office Gross Prediction</h1>
+                </div>
+            </div>            
+
+            <div class="box">
+                <form action="/result" method="post">
+                    <input type="text" placeholder="Enter the movie's budget" name="budg" required><br>  
+                    <select name="genr" required>
+                        <option value="" disabled selected hidden>Select the movie's genre</option>
+                        <option value="0">Action</option>
+                        <option value="1">Adventure</option>
+                        <option value="2">Animation</option>
+                        <option value="3">Comedy</option>
+                        <option value="4">Crime</option>
+                        <option value="5">Documentary</option>
+                        <option value="6">Drama</option>
+                        <option value="7">Family</option>
+                        <option value="8">Fantasy</option>
+                        <option value="9">Foreign</option>
+                        <option value="10">History</option>
+                        <option value="11">Horror</option>
+                        <option value="12">Music</option>
+                        <option value="13">Mystery</option>
+                        <option value="14">Romance</option>
+                        <option value="15">Science Fiction</option>
+                        <option value="16">TV Movie</option>
+                        <option value="17">Thriller</option>
+                        <option value="18">War</option>
+                        <option value="19">Western</option>
+                    </select><br>
+                    <select name="home" required>
+                        <option value="" disabled selected hidden>Does the movie have a homepage</option>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select><br>
+                    <select name="lang" required>
+                        <option value="" disabled selected hidden>Select the language used in the movie</option>
+                        <option value="0">af</option>
+                        <option value="1">ar</option>
+                        <option value="2">cn</option>
+                        <option value="3">cs</option>
+                        <option value="4">da</option>
+                        <option value="5">de</option>
+                        <option value="6">el</option>
+                        <option value="7">en</option>
+                        <option value="8">es</option>
+                        <option value="9">fa</option>
+                        <option value="10">fr</option>
+                        <option value="11">he</option>
+                        <option value="12">hi</option>
+                        <option value="13">hu</option>
+                        <option value="14">id</option>
+                        <option value="15">is</option>
+                        <option value="16">it</option>
+                        <option value="17">ja</option>
+                        <option value="18">ko</option>
+                        <option value="19">ky</option>
+                        <option value="20">nb</option>
+                        <option value="21">nl</option>
+                        <option value="22">no</option>
+                        <option value="23">pl</option>
+                        <option value="24">ps</option>
+                        <option value="25">pt</option>
+                        <option value="26">ro</option>
+                        <option value="27">ru</option>
+                        <option value="28">sl</option>
+                        <option value="29">sv</option>
+                        <option value="30">ta</option>
+                        <option value="31">te</option>
+                        <option value="32">th</option>
+                        <option value="33">tr</option>
+                        <option value="34">vi</option>
+                        <option value="35">xx</option>
+                        <option value="36">zh</option>
+                    </select><br>
+                    <input type="text" placeholder="Enter the movie's popularity" name="popu" required> <br>
+                    <input type="text" placeholder="Enter the movie's runtime" name="runt" required> <br>
+                    <select name="stat" required>
+                        <option value="" disabled selected hidden>Current movie status</option>
+                        <option value="0">Post Production</option>
+                        <option value="1">Released</option>
+                        <option value="2">Rumored</option>
+                    </select><br>
+                    <input type="text" placeholder="Enter the average votes received by the movie" name="avot" required> <br>
+                    <input type="text" placeholder="Enter the count of people who voted for the movie" name="tvot" required> <br>
+                    <select name="wday" required>
+                        <option value="" disabled selected hidden>Select the day on which the movie was released</option>
+                        <option value="0">Monday</option>
+                        <option value="1">Tuesday</option>
+                        <option value="2">Wednesday</option>
+                        <option value="3">Thursday</option>
+                        <option value="4">Friday</option>
+                        <option value="5">Saturday</option>
+                        <option value="6">Sunday</option>
+                    </select><br>
+                     <select name="mont" required>
+                         <option value="" disabled selected hidden>Select the month in which the movie was released</option>
+                         <option value="0">January</option>
+                         <option value="1">February</option>
+                         <option value="2">March</option>
+                         <option value="3">April</option>
+                         <option value="4">May</option>
+                         <option value="5">June</option>
+                         <option value="6">July</option>
+                         <option value="7">August</option>
+                         <option value="8">September</option>
+                         <option value="9">October</option>
+                         <option value="10">November</option>
+                         <option value="11">December</option>
+                     </select><br>
+                    <input type="text" placeholder="Enter the year in which the movie was released" name="year" required> <br>
+                    <button type="submit" id="submit">Predict Movie's Revenue</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
